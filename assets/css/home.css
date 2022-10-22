@@ -1,0 +1,62 @@
+/*Main*/
+main form{
+    width:100%;
+    margin:2vh auto;
+}
+
+main form input{
+    border:0;
+}
+
+main form button{
+    white-space:nowrap;
+}
+
+main table th{
+    background-color:var(--black);
+}
+
+main table th:nth-child(1), main table th:nth-child(2){
+    width:5%;
+}
+
+main table th:nth-child(4){
+    width:10%;
+}
+
+main table th:nth-child(3){
+    text-align:left;
+}
+
+main table td:not(:nth-child(3)){
+    text-align:center;
+}
+
+
+/*Action*/
+.action{
+    position:fixed;
+    top:50%;
+    right:-50%;
+    transform:translate(-50%, -50%);
+    background-color:var(--black);
+    z-index:9;
+    box-shadow:0px 6px 16px -6px rgba(1,1,1,0.5);
+    transition:0.5s;
+    text-align:center;
+}
+
+.action a{
+    width:100%;
+    display:block;
+    padding:1rem;
+    color:var(--gray);
+}
+
+.action a:hover{
+    background-color:var(--primary);
+}
+
+.action a:not(:last-child){
+    border-bottom:1px solid rgba(255,255,255,0.1);
+}
